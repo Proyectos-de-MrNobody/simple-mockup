@@ -1,0 +1,34 @@
+.bg-purple-left,.bg-purple-right{
+    width: 100%;
+    height: 45vw;
+}
+.bg-purple-left{
+    background: linear-gradient(90deg, #A193C4, transparent);
+}
+.bg-purple-right{
+    background: linear-gradient(270deg, #A193C4, transparent);
+}
+.arrow-down{
+    content: url("../../assets_custom/images/arrow-down.svg");
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    transition: all .5s;
+}
+.arrow-down:hover{
+    box-shadow: 0px 0px 6px 10px #a193c4;
+    background-color: #a193c4;
+}
+
+@media (max-width: 767px) {
+    .bg-purple-left{
+        background: linear-gradient(180deg, #A193C4, transparent) !important;
+    }
+    .bg-purple-right{
+        background: linear-gradient(0deg, #A193C4, transparent) !important;
+    }
+    .navbar{
+        margin-right: 5vw;
+        margin-left: 5vw;
+    }
+}
